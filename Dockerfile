@@ -67,7 +67,7 @@ RUN python3 -m venv /venv
 
 # Clone the git repo of FaceFusion and set version
 WORKDIR /
-RUN git clone https://github.com/facefusion/facefusion.git && \
+RUN git clone https://github.com/hassan-sd/facefusion-unlocked.git && \
     cd /facefusion && \
     git checkout ${FACEFUSION_VERSION}
 
