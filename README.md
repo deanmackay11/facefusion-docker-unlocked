@@ -32,12 +32,13 @@ to launch it on RunPod.
 
 ```bash
 docker run -d \
-  --gpus all \
-  -v /workspace \
-  -p 3000:3001 \
-  -p 8888:8888 \
-  -e JUPYTER_PASSWORD=Jup1t3R! \
-  ashleykza/facefusion:latest
+    --gpus all \
+    -v ~/test_share:/workspace/Documents \
+    -p 3000:3001 \
+    -p 8888:8888 \
+    -e JUPYTER_PASSWORD=Jup1t3R! \
+    ceramicwhite/facefusion:unlocked
+
 ```
 
 You can obviously substitute the image name and tag with your own.
